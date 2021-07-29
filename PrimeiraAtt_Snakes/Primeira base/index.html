@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- Definição de linguagem -->
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Importação do css -->
+        <link rel="stylesheet" href="estyle.css">
+
+        <!-- Título da page -->
+        <title>Snakes</title>
+    </head>
+
+    <!-- Faz a criação do corpo do "site" -->
+    <body>
+
+        <!-- Bloco com as cobras -->
+
+        <h1 class="Nome page">BEM VINDO AO LUGAR DAS SNAKES</h1>
+        <div id="snake1">
+            <h2>Cascavel</h2>
+            <img class="foto01" src="Imagens/Cascavel01.jpg" alt="">
+        </div>
+
+        <div id="snake2">
+            <h2>Pestana</h2>
+            <img class="foto02" src="imagens/Cobra de pestana02.jpg" alt="Pestana">
+        </div>
+
+        <div id="snake3">
+            <h2>Jiboia</h2>
+            <img class="foto03" src="imagens/Jiboia03.jpg" alt="Jiboia">
+        </div>
+
+        <div id="snake4">
+            <h2 >Mamba Negra</h2>
+            <img class="foto04" src="imagens/Mamba Negra04.jpg" alt="Mamba Negra">
+        </div>
+
+        <div id="snake5">
+            <h3 >Naja</h3>
+            <img class="foto05" src="Imagens/Naja05.jpg" alt="Naja">
+        </div>
+
+        <div id="snake6">
+            <h2 >Python</h2>
+            <img class="foto06" src="Imagens/python-cobra-amarela06.jpg" alt="Python">
+        </div>
+
+        <div id="snake7">
+            <h2 >Víbora</h2>
+            <img class="foto07" src="Imagens/Víbora Cornuda07.jpg" alt="Víbora">
+        </div>
+
+        <div id="snake8">
+            <h2 >Víbora da Morte</h2>
+            <img class="foto08" src="Imagens/Víbora da morte08.jpg" alt="Víbora da Morte">
+        </div>
+
+        
+        <!-- <div class="gif">
+            <img src= "https://tenor.com/view/isso-etudo-pessoal-the-noite-com-danilo-gentili-parodia-coelho-diguinho-the-noite-gif-16324445"/>   
+        </div> -->
+
+         <!-- <div class="tenor-gif-embed" data-postid="16324445" </div>
+            <li>
+                <a href="https://tenor.com/view/isso-etudo-pessoal-the-noite-com-danilo-gentili-parodia-coelho-diguinho-the-noite-gif-16324445"> alt="Isso ETudo Pessoal The Noite Com Danilo Gentili GIF"</a>
+            </li>
+
+            <div>
+                <input
+                type="image"
+                
+                async src="https://tenor.com/embed.js">
+                />
+
+
+                https://tenor.com/bgETF.gif
+            </div> -->
+        
+
+            <!-- Criação dos botões -->
+        <div class="botao">
+            <input id="btn" type="button" value="Nomes" onclick="mostrarNomes()">
+            <input type="button" value="Estragar Site" onclick="lascarTudo()">
+        </div>
+
+        <!-- Descrições das cobras -->
+        <script>
+            snakes =[
+                {
+                nome : 'Cascavel',
+                especie : 'Crotalus durissus',
+                tipo : 'snake'
+                },
+
+                {
+                    nome : 'Pestana',
+                    especie: 'B.schlegeli',
+                    tipo : 'snake'
+                },
+
+                {
+                    nome : 'Jiboia',
+                    especie : 'Boa constrictor',
+                    tipo : 'snake'
+                },
+
+                {
+                    nome : 'Mamba Negra',
+                    especie: 'D. polylepis',
+                    tipo : 'snake'  
+                },
+
+                {
+                    nome : 'Naja',
+                    especie : 'Naja anchietae',
+                    tipo : 'snake'
+                },
+
+                {
+                    nome : 'Python',
+                    especie : 'Python bivittatus',
+                    tipo : 'snake'
+                },
+
+                {
+                    nome : 'Víbora',
+                    especie : 'V. latastei',
+                    tipo : 'snake'
+                },
+
+                {
+                    nome : 'Víbora da Morte',
+                    especie : 'Acanthophis Antarcticus',
+                    tipo : 'snake'
+                },
+           ];
+
+            //Função que mostra o nome das snakes, quando clica no botão
+            function filtros(cobra){
+                return cobra.tipo =='snake';
+            }
+
+            function mostrarNomes(){
+                var filtrando = snakes.filter(filtros);
+                return filtrando.forEach(x => alert(x.nome));
+            }
+            
+            //Função de mudarr site
+            function lascarTudo(){
+                document.getElementsByClassName('Nome page')[0].innerHTML = "Até Logo";
+                var gif1 = document.querySelector("body");
+                gif1.style.backgroundImage = "url(Imagens/Diguinha.gif)";
+
+                var img1 = document.querySelector(".foto01");
+                img1.setAttribute("src", "Imagens/Diguinha.gif");
+                document.getElementById('snake1').getElementsByTagName("h2")[0].innerHTML = "Até mais ver"
+               // document.querySelector("Imagens/Diguinha.gif").style.width = "550px"
+
+                var imagem = document.querySelector(".foto02");
+                imagem.setAttribute("src", "Imagens/Diguinha.gif");
+                document.getElementById('snake2').getElementsByTagName("h2")[0].innerHTML = "Bon voyage"
+               // document.querySelector("Imagens/dance.gif").style.width = "530px"
+                
+                var Timagem = document.querySelector(".foto03");
+                Timagem.setAttribute("src", "Imagens/Diguinha.gif");
+                document.getElementById('snake3').getElementsByTagName("h2")[0].innerHTML = "arrivederci"
+               // document.querySelector("Imagens/Diguinha.gif").style.width = "550px"
+
+                var Qimagem = document.querySelector(".foto04");
+                Qimagem.setAttribute("src", "Imagens/Diguinha.gif");
+                document.getElementById('snake4').getElementsByTagName("h2")[0].innerHTML = "boa viagem"
+               // document.querySelector("Imagens/Diguinha.gif").style.width = "550px"
+
+                var Kimagem = document.querySelector(".foto05");
+                Kimagem.setAttribute("src", "Imagens/Diguinha.gif");
+                document.getElementById('snake5').getElementsByTagName("h3")[0].innerHTML = "Que a porta bata onde o sol não bate"
+               // document.querySelector("Imagens/Diguinha.gif").style.width = "550px"
+
+                var Limagem = document.querySelector(".foto06");
+                Limagem.setAttribute("src", "Imagens/Diguinha.gif");
+                document.getElementById('snake6').getElementsByTagName("h2")[0].innerHTML = "não volte mais aqui"
+                //document.querySelector("Imagens/Diguinha.gif").style.width = "550px"
+
+                var Oimagem = document.querySelector(".foto07");
+                Oimagem.setAttribute("src", "Imagens/Diguinha.gif");
+                document.getElementById('snake7').getElementsByTagName("h2")[0].innerHTML = "hasta la vista baby"
+                //document.querySelector("Imagens/Diguinha.gif").style.width = "550px"
+
+                var Eimagem = document.querySelector(".foto08");
+                Eimagem.setAttribute("src", "Imagens/Diguinha.gif");
+                document.getElementById('snake8').getElementsByTagName("h2")[0].innerHTML = "escafeda-se"
+                //document.querySelector("Imagens/Diguinha.gif").style.width = "550px"
+            }
+           
+        </script>
+    </body>
+
+    
+</html>

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+/*@import url('https://tenor.com/view/isso-etudo-pessoal-the-noite-com-danilo-gentili-parodia-coelho-diguinho-the-noite-gif-16324445');
+
+/*Texto principal*/
+h1{
+    text-align: center;
+    color: chartreuse;
+}
+
+/*Fundo*/
+body{
+    background-image: url("Imagens/1.gif");
+
+}
+
+/* body2{
+    background-image: url("Imagens/Diguinha.gif");
+} */
+
+/*Próximos textos*/
+h2{
+    color:floralwhite;
+    font-size: 36px;
+    margin-top: auto;
+    text-align: center;
+}
+
+/*Estilização da primeira cobra*/
+#snake1{
+    background-color: rgba(128, 15, 0, 0.61);
+    width: 100%;
+   
+}
+
+.foto01{
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 40px;
+}
+
+/*Estilização da segunda cobra*/
+#snake2{
+    background-color: rgba(0, 0, 128, 0.644);
+}
+
+.foto02{
+    margin-bottom: 50px;
+    margin-left: 10%;
+}
+
+h3{
+    color: lime;
+    font-size: 40px;
+    margin-left: 10%;
+}
+
+.text{
+   /* background-color: brown;*/
+    width: 40%;
+    height: 50px;
+    margin-left: 9em;
+    margin-top: -1em; 
+}
+
+p{
+    font-family: 'Mate SC', serif;
+    color:white;
+    text-align: justify;
+    font-size: 18px;
+}
+
+/*Estilização da terceira cobra*/
+#snake3{
+    background-color: rgba(214, 25, 50, 0.5);
+    margin-top: 3em;
+}
+
+.foto03{
+    margin-left: 50%;
+    margin-bottom: 40px;
+}
+
+/*Estilização da quarta cobra*/
+#snake4{
+    background-color: rgba(0, 0, 0, 0.815);
+    margin-top: 3em;
+}
+
+.foto04{
+    margin-left: 20em;
+    margin-bottom: 20px;
+}
+
+/*Estilização da quinta cobra*/
+.foto05{
+    width: 50%;
+    height: 20%;
+    margin-left: 25%;
+    margin-bottom: 40px;
+}
+
+#snake5{
+    background-color: rgba(255, 140, 0, 0.651);
+}
+
+/*Estilização da sexta cobra*/
+#snake6{
+    background-color: rgba(79, 139, 0, 0.712);
+    margin-top: 3em;
+}
+
+.foto06{
+    height: 40%;
+    margin-bottom: 3em;
+    margin-left: 30em;
+}
+
+/*Estilização da sétima cobra*/
+#snake7{
+    background-color: rgba(0, 0, 0, 0.925);
+    width: 50%;
+    margin-left: 24%;
+    margin-top: 3em;
+}
+
+.foto07{
+    margin-left: 4.8em;
+    margin-bottom: 3em;
+}
+
+
+/*Estilização da oitava cobra*/
+#snake8{
+    background-color:rgba(25, 25, 112, 0.822);
+    margin-top: 3em;
+}
+
+.foto08{
+    margin-left: 20em;
+    margin-bottom: 3em;
+}
+
+
+#gif{
+    width: 80%;
+    height: 80%;
+}
+
+#botao{
+    color: crimson;
+}
+
+
+
